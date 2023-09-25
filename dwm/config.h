@@ -84,6 +84,7 @@ static const char *rebootcmd[]		= { "reboot", NULL };
 static const char *lockcmd[]		= { "slock", NULL };
 static const char *musicfoxcmd[]	= { "st", "musicfox", NULL };
 static const char *trayercmd[]		= { "/home/csc/.dwm/scripts/trayer.sh", NULL };
+static const char *grimcmd[]		= { "/home/csc/.dwm/scripts/grim.sh", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        	function        	argument */
@@ -104,6 +105,7 @@ static const Key keys[] = {
 	{ MODKEY,						XK_u,		hide,				{0} },
 	{ MODKEY,						XK_i,		showall,			{0} },
 	{ MODKEY,						XK_t,		spawn,				{ .v = trayercmd } },
+	{ MODKEY,						XK_n,		spawn,				{ .v = grimcmd } },
 	TAGKEYS(                        XK_1,      	                	0)
 	TAGKEYS(                        XK_2,      	                	1)
 	TAGKEYS(                        XK_3,      	                	2)
