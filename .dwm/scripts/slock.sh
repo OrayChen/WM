@@ -1,2 +1,2 @@
 #!/bin/sh
-xautolock -time 10 -locker slock
+xautolock -time 5 -locker slock
