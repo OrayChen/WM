@@ -89,13 +89,14 @@ static const char *grimcmd[]		= { "/home/csc/.dwm/scripts/grim.sh", NULL };
 static const Key keys[] = {
 	/* modifier                     key        	function        	argument */
 	{ MODKEY,                       XK_space,  	spawn,          	{ .v = dmenucmd } },
-	{ MODKEY,						XK_q, 	   	spawn,          	{ .v = termcmd } },
+	{ MODKEY,						XK_Return, 	spawn,          	{ .v = termcmd } },
 	{ MODKEY,						XK_g,	   	spawn,				{ .v = browsercmd } },
 	{ MODKEY|ShiftMask,				XK_r, 	   	spawn,				{ .v = rebootcmd } },
 	{ MODKEY|ShiftMask,				XK_o,	   	spawn,				{ .v = shutdowncmd } },
 	{ MODKEY,						XK_p,		togglescratch,		{ .v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      	togglebar,      	{0} },
 	{ MODKEY,                       XK_l,      	focusstackvis,  	{ .i = +1 } },
+	{ MODKEY,						XK_h,		focusstackvis,		{ .i = -1 } },
 	{ MODKEY,                       XK_j,      	setmfact,       	{ .f = -0.05 } },
 	{ MODKEY,                       XK_k,      	setmfact,       	{ .f = +0.05 } },
 	{ MODKEY,						XK_o,      	killclient,     	{0} },
